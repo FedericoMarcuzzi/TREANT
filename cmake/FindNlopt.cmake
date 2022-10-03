@@ -1,5 +1,5 @@
 set(FIND_NLOPT_PATHS
-        3rdparty/nlopt-2.6.1)
+        3rdparty/nlopt-*)
 
 find_path(NLOPT_INCLUDE_DIR nlopt.hpp
         PATH_SUFFIXES include

@@ -1,15 +1,11 @@
-# TreeAnt
+This is a fork of the repository [TreeAnt](https://bitbucket.org/dav_gir/treeant/src/master/) a C++ implementation of the TREANT algorithm proposed by [Calzavara _et al._](https://dl.acm.org/doi/10.1007/s10618-020-00694-9).
 
-This is a private repo to host the Msc Thesis work of Davide Girardini with Prof. Lucchese as supervisor.
-
-Prof. Lucchese and Ph.D student Seyum will have permission to manage the repo.
-
-In the project folder you must include a folder 3rdparty with the required third party libraries:
+To compile TREANT the project folder must include a folder named **3rdparty** with the required third party libraries:
 (see FindNlopt.cmake).
 
 ```bash
 ├── 3rdparty
-│   └── nlopt-2.6.1
+│   └── nlopt-*
 │       ├── include
 │       └── lib
 ```

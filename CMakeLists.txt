@@ -1,9 +1,7 @@
 cmake_minimum_required(VERSION 3.9)
-project (treeant LANGUAGES CXX)
+project (treant LANGUAGES CXX)
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
-
-#enable_testing()
 
 IF (NOT WIN32)
     IF(NOT CMAKE_BUILD_TYPE)
@@ -20,9 +18,6 @@ ELSE ()
     SET(CMAKE_CXX_FLAGS_RELEASE "-Werror -O3 -s")
     SET(CMAKE_CXX_FLAGS_DEBUG "-g -O0")
 ENDIF ()
-
-# Additional flags if needed
-# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} <...flags...>")
 
 include_directories(include)
 
@@ -71,29 +66,3 @@ target_link_libraries(${TREANT_LIB}
 # Build the executable in the main
 add_executable(${CMAKE_PROJECT_NAME} main.cpp)
 target_link_libraries(${CMAKE_PROJECT_NAME} ${TREANT_LIB})
-
-# python interface and sources
-add_subdirectory(py_decision_tree)
-
-# Add tests
-add_test(
-  NAME
-    python_test
-  COMMAND
-    ${CMAKE_COMMAND} -E env PY_DECISION_TREE_HEADER_FILE=${CMAKE_CURRENT_SOURCE_DIR}/py_decision_tree/py_decision_tree.h
-                            PY_DECISION_TREE_LIBRARY_FILE=${CMAKE_CURRENT_BINARY_DIR}/cmake-build-release/libpy_decision_tree.so
-    ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_py_decision_tree.py
-  )
-
-
-#add_executable(test_opt_parser tests/test_opt_parser.cpp $<TARGET_OBJECTS:treeant_lib>)
-#add_test(NAME test_opt_parser COMMAND test_opt_parser)
-#
-#add_executable(test_decision_tree tests/test_decision_tree.cpp $<TARGET_OBJECTS:treeant_lib>)
-#add_test(NAME test_decision_tree COMMAND test_decision_tree)
-#
-#add_executable(test_utils_format tests/test_utils_format.cpp $<TARGET_OBJECTS:treeant_lib>)
-#add_test(NAME test_utils_format COMMAND test_utils_format)
-#
-#add_executable(test_utils_format tests/test_parallel.cpp $<TARGET_OBJECTS:treeant_lib>)
-#add_test(NAME test_parallel COMMAND test_parallel)

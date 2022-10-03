@@ -245,6 +245,7 @@ std::vector<indexes_t> BaggingClassifier::generateRandomIndexesPerTree(
   std::vector<indexes_t> ret(estimators_);
   const unsigned indexesSize = static_cast<unsigned>(totalRows * maxFeatures_);
   std::default_random_engine generator;
+  generator.seed(7);
   std::uniform_int_distribution<unsigned int> distribution(0, totalRows - 1);
 
   for (auto &treeIndexesSet : ret) {
