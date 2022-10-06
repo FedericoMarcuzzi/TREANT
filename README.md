@@ -1,4 +1,4 @@
-This is a fork of the repository [TreeAnt](https://bitbucket.org/dav_gir/treeant/src/master/) a C++ implementation of the TREANT algorithm proposed by [Calzavara _et al._](https://dl.acm.org/doi/10.1007/s10618-020-00694-9).
+This is a fork of the repository [TreeAnt](https://bitbucket.org/dav_gir/treeant/src/master/) a C++ implementation of the TREANT algorithm proposed by **Calzavara *et. al.*** in their research paper titled [Treant: training evasion-aware decision trees](https://dl.acm.org/doi/10.1007/s10618-020-00694-9).
 
 To compile TREANT the project folder must include a folder named **3rdparty** with the required third party libraries:
 (see FindNlopt.cmake).
