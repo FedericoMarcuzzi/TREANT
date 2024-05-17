@@ -1,3 +1,5 @@
+# Treant: Training Evasion-Aware Decision Trees
+
 This is a fork of the repository [TreeAnt](https://bitbucket.org/dav_gir/treeant/src/master/) a C++ implementation of the TREANT algorithm proposed by **Calzavara *et. al.*** in their research paper titled [Treant: training evasion-aware decision trees](https://dl.acm.org/doi/10.1007/s10618-020-00694-9).
 
 To compile TREANT the project folder must include a folder named **3rdparty** with the required third party libraries:
@@ -29,6 +31,8 @@ Tested using static libraries: add -DBUILD_SHARED_LIBS=OFF to cmake flags.
 
 
 ## Credits
+
+If you use this implementation in your work, please add a reference/citation to our paper. You can use the following BibTeX entry:
 
 ```
 @article{DBLP:journals/datamine/CalzavaraLTAO20,
