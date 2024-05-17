@@ -26,3 +26,27 @@ make install
 ```
 the installation folder will contain the include and lib folder.
 Tested using static libraries: add -DBUILD_SHARED_LIBS=OFF to cmake flags.
+
+
+## Credits
+
+```
+@article{DBLP:journals/datamine/CalzavaraLTAO20,
+  author       = {Stefano Calzavara and
+                  Claudio Lucchese and
+                  Gabriele Tolomei and
+                  Seyum Assefa Abebe and
+                  Salvatore Orlando},
+  title        = {Treant: training evasion-aware decision trees},
+  journal      = {Data Min. Knowl. Discov.},
+  volume       = {34},
+  number       = {5},
+  pages        = {1390--1420},
+  year         = {2020},
+  url          = {https://doi.org/10.1007/s10618-020-00694-9},
+  doi          = {10.1007/S10618-020-00694-9},
+  timestamp    = {Tue, 13 Jul 2021 13:27:03 +0200},
+  biburl       = {https://dblp.org/rec/journals/datamine/CalzavaraLTAO20.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+```
