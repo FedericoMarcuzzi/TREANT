@@ -32,7 +32,7 @@ Tested using static libraries: add -DBUILD_SHARED_LIBS=OFF to cmake flags.
 
 ## Credits
 
-If you use this implementation in your work, please add a reference/citation to our paper. You can use the following BibTeX entry:
+If you use this implementation in your work, please add a reference/citation to the paper. You can use the following BibTeX entry:
 
 ```
 @article{DBLP:journals/datamine/CalzavaraLTAO20,
